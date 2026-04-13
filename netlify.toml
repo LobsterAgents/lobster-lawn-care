@@ -4,6 +4,12 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
+  NODE_ENV = "production"
+
+# Disable Netlify's automatic framework detection
+[build.processing]
+  skip_processing = false
 
 [[redirects]]
   from = "/*"
